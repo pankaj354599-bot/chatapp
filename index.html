@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Play Store </title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #fff;
+      padding-bottom: 70px;
+    }
+
+    /* Top Bar */
+    .top-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px;
+      background: #fff;
+      border-bottom: 1px solid #ddd;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    .top-bar img {
+      height: 50px;
+    }
+
+    .top-bar .icons {
+      display: flex;
+      gap: 15px;
+    }
+
+    .top-bar .icons img {
+      width: 25px;
+      height: 25px;
+    }
+
+    /* App Header */
+    .app-header {
+      display: flex;
+      padding: 15px;
+    }
+
+    .app-header img {
+      width: 70px;
+      height: 70px;
+      border-radius: 15px;
+      margin-right: 15px;
+    }
+
+    .app-info h1 {
+      font-size: 18px;
+      margin: 0;
+    }
+
+    .app-info p {
+      margin: 5px 0;
+      font-size: 14px;
+      color: #01875f;
+    }
+
+    .app-info small {
+      font-size: 12px;
+      color: #777;
+    }
+
+    /* Stats */
+    .stats {
+      display: flex;
+      justify-content: space-around;
+      padding: 10px 15px;
+      font-size: 13px;
+      border-bottom: 1px solid #eee;
+    }
+
+    /* Install Button */
+    .install-btn {
+      display: block;
+      width: 90%;
+      margin: 15px auto;
+      background: #01875f;
+      color: #fff;
+      text-align: center;
+      padding: 12px;
+      border-radius: 5px;
+      font-size: 16px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    /* Slider */
+    .slider {
+      display: flex;
+      overflow-x: auto;
+      scroll-behavior: smooth;
+      padding: 15px;
+    }
+
+    .slider img {
+      width: 220px;
+      height: auto;
+      margin-right: 10px;
+      border-radius: 10px;
+    }
+
+    /* About */
+    .about {
+      padding: 15px;
+    }
+
+    .about h2 {
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+
+    .about p {
+      font-size: 14px;
+      color: #444;
+      margin: 5px 0;
+    }
+
+    /* Bottom Navigation */
+    .bottom-nav {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 60px;
+      background: #fff;
+      border-top: 1px solid #ccc;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+
+    .bottom-nav a {
+      flex: 1;
+      text-align: center;
+      text-decoration: none;
+      color: #666;
+      font-size: 12px;
+    }
+
+    .bottom-nav img {
+      width: 24px;
+      height: 24px;
+      display: block;
+      margin: 0 auto 2px;
+    }
+
+    .bottom-nav a.active {
+      color: #01875f;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Bar -->
+  <div class="top-bar">
+    <img src="images/playlogo.png" alt="Play Store">
+    <div class="icons">
+      <img src="images/sea3.png" alt="Search">
+      <img src="images/help.png" alt="Help">
+      <img src="images/pro.png" alt="Profile">
+    </div>
+  </div>
+
+  <!-- App Header -->
+  <div class="app-header">
+    <img src="images/logo.png" alt="App Logo">
+    <div class="app-info">
+      <h1>Sexy: Video Call & LiveChat</h1>
+      <p>Sexy Chat Studio</p>
+      <small>In-app purchases</small>
+    </div>
+  </div>
+
+  <!-- Stats -->
+  <div class="stats">
+    <span>3.5 ★ • 1.8K reviews</span>
+    <span>5L+ Downloads</span>
+    <span>18+ Rated</span>
+  </div>
+
+  <!-- Install Button -->
+  <a href="apk/sexychat.apk" class="install-btn" download>Install</a>
+
+  <!-- Image Slider -->
+  <div class="slider">
+    <img src="images/ss.png" alt="s1">
+    <img src="images/ss1.png" alt="s2">
+    <img src="images/ss2.png" alt="s3">
+  </div>
+
+  <!-- About -->
+  <div class="about">
+    <h2>About this app</h2>
+    <p>Blom Lite - Global Social Platform
+Blom Lite is a social platform designed for people who enjoy connecting through video and text. You can interact with friendly people, expand your social circle, and enjoy delightful conversations in a relaxed environment.
+Key Features:
+📹 High-Quality Private Video Calls
+Initiate video calls anytime, anywhere, and enjoy clear, smooth interactions for a deeper connection.
+💬 Text Messaging
+Meet interesting people from around the world and stay in touch through simple and engaging text conversations.
+🎁 Fun Virtual Gifts
+Express your emotions by sending virtual gifts during video chats, adding a fun element to your interactions.
+Blom Lite provides a friendly and easy-to-use social platform where you can build meaningful connections with friends from around the world. Join us and start your global social journey!
+📲 Download Blom Lite now for a fun and easy way to connect!
+Updated on
+Jun 17, 2025
+!</p>
+  </div>
+
+  <!-- Bottom Navigation -->
+  <div class="bottom-nav">
+    <a href="#">
+      <img src="images/games.png" alt="Games">
+      <span>Games</span>
+    </a>
+    <a href="#" class="active">
+      <img src="images/app.png" alt="Apps">
+      <span>Apps</span>
+    </a>
+    <a href="#">
+      <img src="images/book.png" alt="Books">
+      <span>Books</span>
+    </a>
+    <a href="#">
+      <img src="images/kid.png" alt="Kids">
+      <span>Kids</span>
+    </a>
+  </div>
+
+</body>
+</html>
